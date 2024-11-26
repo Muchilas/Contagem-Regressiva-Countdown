@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            function contagemRegressiva(numero) {
+                for (var i = numero; i >= 0; i--) {
+                    alert(i);
+                }
+            }
+
+            var numero = Number(prompt("Digite o número para a contagem regressiva:"));
+            
+            //Verifica se a conversão para número deu NaN (Not-a-Number)
+            while (Number.isNaN(numero)) {
+                alert("Por favor, insira apenas números.");
+                numero = Number(prompt("Digite o número para a contagem regressiva:"));
+            }
+
+            contagemRegressiva(numero);
+        </script>
+    </body>
+</html>
